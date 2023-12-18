@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<script src="script.js"></script>
+
+<body>
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">GPU
+
+    </button>
+    <div class="dropdown-content">
+      <a href="#">4090</a>
+      <a href="#">4080 Ti</a>
+      <a href="#">4080</a>
+   </div>
+  </div>
+  <a href="https://chat.openai.com/g/g-QRuNjYZ7G-computer-hardware-assistant" class="noir Recommendations">Recommendations</a>
+  
+</div>
+<div id="clock">
+  <h1 id="date-time"></h1>
+</div>
+
+<table id="TopPick">
+  <caption id="Cap1">TOP picks in CPU (Brand New)</caption>
+  <tr>
+    <th>Brand</th>
+    <th>Intel/AMD</th>
+    <th>CPU</th>
+    <th>Value</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td><a href="https://www.example.com/">Asus </a></td>
+    <td>Intel</td>
+    <td>i9 - 14900K</td>
+    <td>49</td>
+    <td>1099</td>
+  </tr>
+  <tr>
+    <td>Mary Shelley</td>
+    <td>Frankenstein; </td>
+    <td>1818</td>
+    <td>978</td>
+    <td>1530278449</td>
+  </tr>
+</table>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+<table id="myTable">
+  <caption id="Cap2">CPU Comparison Table</caption>
+  <tr class="header">
+    <th style="width:5%">Intel / Ryzen</th>
+    <th style="width:35%">Name</th>
+    <th style="width:5%">Core</th>
+    <th style="width:5%">Threads</th>
+    <th style="width:5%">Lithography</th>
+    <th style="width:25%">Max GHz</th>
+    <th style="width:10%">Value</th>
+    <th style="width:10%">Price</th>
+  </tr>
+  
+  <!-- i9 14th gen -->
+  <tr>
+    <td>Intel</td>
+    <td><a href="#">i9 - 14900K</a></td>
+    <td><a href="#">24</a></td>
+    <td><a href="#">32</a></td>
+    <td><a href="#">7 nm</a></td>
+    <td><a href="#">6 Ghz</a></td>
+    <!-- TBC-->
+    <td><a href="#">100</a></td>
+    <td><a href="#">639</a></td>
+  </tr>
+
+  <tr>
+    <td>Intel</td>
+    <td><a href="#">i9 - 14900KF</a></td>
+    <td><a href="#">24</a></td>
+    <td><a href="#">32</a></td>
+    <td><a href="#">7 nm</a></td>
+    <td><a href="#">6 Ghz</a></td>
+    <!-- TBC-->
+    <td><a href="#">100</a></td>
+    <td><a href="#">639</a></td>
+  </tr>
+
+  <!-- i9 13th gen -->
+  <tr>
+    <td>Intel</td>
+    <td><a href="#">i9 - 13900K</a></td>
+    <td><a href="#">24</a></td>
+    <td><a href="#">32</a></td>
+    <td><a href="#">7 nm</a></td>
+    <td><a href="#">5.8 Ghz</a></td>
+    <!-- TBC-->
+    <td><a href="#">90</a></td>
+    <td><a href="#">384</a></td>
+  </tr>
+
+  <tr>
+    <td>Intel</td>
+    <td><a href="#">i9 - 13900KF</a></td>
+    <td><a href="#">24</a></td>
+    <td><a href="#">32</a></td>
+    <td><a href="#">7 nm</a></td>
+    <td><a href="#">5.8 Ghz</a></td>
+    <!-- TBC-->
+    <td><a href="#">90</a></td>
+    <td><a href="#">384</a></td>
+  </tr>
+
+  <!-- r9 7th gen -->
+  <tr>
+    <td>AMD</td>
+    <td><a href="#">R9 - 7950X3D</a></td>
+    <td><a href="#">16</a></td>
+    <td><a href="#">32</a></td>
+    <td><a href="#">5 nm</a></td>
+    <td><a href="#">5.7 Ghz</a></td>
+    <!-- TBC-->
+    <td><a href="#">90</a></td>
+    <td><a href="#">384</a></td>
+  </tr>
+
+  <tr>
+    <td>AMD</td>
+    <td><a href="#">R9 - 7950</a></td>
+    <td><a href="#">16</a></td>
+    <td><a href="#">32</a></td>
+    <td><a href="#">5 nm</a></td>
+    <td><a href="#">5.7 Ghz</a></td>
+    <!-- TBC-->
+    <td><a href="#">90</a></td>
+    <td><a href="#">384</a></td>
+  </tr>
+
+
+  <!-- i7 14th gen -->
+  <tr>
+    <td>Intel</td>
+    <td><a href="#">i7 - 14700K</a></td>
+    <td><a href="#">20</a></td>
+    <td><a href="#">28</a></td>
+    <td><a href="#">7 nm</a></td>
+    <td><a href="#">5.6 Ghz</a></td>
+    <!-- TBC-->
+    <td><a href="#">95</a></td>
+    <td><a href="#">409</a></td>
+  </tr>
+
+  <tr>
+    <td>Intel</td>
+    <td><a href="#">i7 - 14700KF</a></td>
+    <td><a href="#">20</a></td>
+    <td><a href="#">28</a></td>
+    <td><a href="#">7 nm</a></td>
+    <td><a href="#">5.6 Ghz</a></td>
+    <!-- TBC-->
+    <td><a href="#">95</a></td>
+    <td><a href="#">384</a></td>
+  </tr>  
+
+  <!-- i7 13th gen -->
+  <tr>
+    <td>Intel</td>
+    <td><a href="#">i7 - 14700K</a></td>
+    <td><a href="#">20</a></td>
+    <td><a href="#">28</a></td>
+    <td><a href="#">7 nm</a></td>
+    <td><a href="#">5.6 Ghz</a></td>
+    <!-- TBC-->
+    <td><a href="#">95</a></td>
+    <td><a href="#">409</a></td>
+  </tr>
+
+  <tr>
+    <td>Intel</td>
+    <td><a href="#">i7 - 14700KF</a></td>
+    <td><a href="#">20</a></td>
+    <td><a href="#">28</a></td>
+    <td><a href="#">7 nm</a></td>
+    <td><a href="#">5.6 Ghz</a></td>
+    <!-- TBC-->
+    <td><a href="#">95</a></td>
+    <td><a href="#">384</a></td>
+  </tr>  
+
+</table>
+
+<div style="padding-left:16px">
+  <h2>Welcome to .com</h2>
+  <p>Navigation bar with a search box and a submit button inside of it.</p>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+</body>
+<footer>
+  <p>site contains Amazon affiliate links, which means we may earn a commission if you make a purchase through our links.</p> 
+</footer>
+</html>
